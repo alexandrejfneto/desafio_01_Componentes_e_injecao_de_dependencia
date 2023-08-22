@@ -18,11 +18,11 @@ public class Desafio01Application implements CommandLineRunner{
 
 	public static void main(String[] args) {
 		SpringApplication.run(Desafio01Application.class, args);
-		Locale.setDefault(Locale.US);
 	}
 
 	@Override
 	public void run(String... args) throws Exception {
+		Locale.setDefault(Locale.US);
 		
 		Order order1 = new Order(1034, 150.0, 20.0);
 		System.out.print(order1.toString());
