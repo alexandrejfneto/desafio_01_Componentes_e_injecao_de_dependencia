@@ -36,7 +36,7 @@ public class Order {
 
 	@Override
 	public String toString() {
-		return "Pedido código "+ code +"\nValor Total: R$ ";
+		return "Pedido código "+ code;
 	}
 	
 }

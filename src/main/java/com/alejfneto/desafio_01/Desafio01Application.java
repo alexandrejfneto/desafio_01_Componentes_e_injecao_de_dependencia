@@ -26,13 +26,13 @@ public class Desafio01Application implements CommandLineRunner{
 		
 		Order order1 = new Order(1034, 150.0, 20.0);
 		System.out.print(order1.toString());
-		System.out.println(String.format("%.2f%n", orderService.total(order1)));
+		System.out.println("\nValor Total: R$ " + String.format("%.2f%n", orderService.total(order1)));
 		Order order2 = new Order(2282, 800.0, 10.0);
 		System.out.print(order2.toString());
-		System.out.println(String.format("%.2f%n", orderService.total(order2)));
+		System.out.println("\nValor Total: R$ " + String.format("%.2f%n", orderService.total(order2)));
 		Order order3 = new Order(1309, 95.90, 0.0);
 		System.out.print(order3.toString());
-		System.out.println(String.format("%.2f%n", orderService.total(order3)));
+		System.out.println("\nValor Total: R$ " + String.format("%.2f%n", orderService.total(order3)));
 		
 	}
 
