@@ -33,9 +33,10 @@ public class Order {
 	public Integer getCode() {
 		return code;
 	}
-	
-	
-	
-	
 
+	@Override
+	public String toString() {
+		return "Pedido código "+ code +" Valor Total: R$ ";
+	}
+	
 }

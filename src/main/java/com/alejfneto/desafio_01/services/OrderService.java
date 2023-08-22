@@ -9,11 +9,11 @@ import com.alejfneto.desafio_01.entities.Order;
 public class OrderService {
 	
 	@Autowired
-	ShippingService shippingService;
+	private static ShippingService shippingService;
 	
-	public Double total (Order order) {
-		return order.getBasic() 
-				-(order.getBasic()* order.getDiscount())
+	public static Double total (Order order) {
+		return 	order.getBasic()
+				-(order.getBasic()* order.getDiscount()/100)
 				+shippingService.shipment(order);
 	}
 
